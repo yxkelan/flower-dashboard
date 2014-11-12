@@ -1,5 +1,5 @@
-# Flower Dashbord
-This dashborad is an example of visualize data.
+# Flower Dashboard
+This dashboard is an example of visualizing data.
 
 ### Tech
 * JQuery
