@@ -1,0 +1,201 @@
+@import 'bootstrap.css';
+@import 'chartist.min.css';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* Override Bootstrap CSS */
+.tooltip {
+    opacity: 100;
+    position: absolute;
+    display: inline-block;
+    min-width: 5em;
+    padding: .5em;
+    background: rgba(244, 198, 61, 0.83);
+    color: #453D3F;
+    font-weight: 700;
+    text-align: center;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top-color: rgba(244, 198, 61, 0.83);  
+}
+
+
+li {
+    list-style: none;
+}
+
+
+/* Override Chartist CSS */
+.ct-chart .ct-label.ct-vertical,
+.ct-chart .ct-label.ct-horizontal {
+    fill: rgba(0, 0, 0, 0.94);
+    color: rgba(0, 0, 0, 0.86);
+    font-size: 1.2rem;
+}
+
+.ct-chart text.ct-label {
+    color: white;
+    font-size: 1.2rem;
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+/* Dashboard CSS */
+#overview {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#overview-chart-container {
+    margin-left: 64px;
+}
+
+.header {
+    border-bottom: 1px solid #ddd;
+    margin: 0px -7px 0px 33px;
+}
+
+.header h2 {
+    display: inline-block;
+    border-bottom: 4px solid #ddd;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+
+h3.date {
+    font-weight: lighter;
+    margin-top: -14px;
+}
+
+.flower {
+    display:inline-block;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #F4C63D;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+
+.flower.large{
+    width: 80px;
+    height: 80px;
+}
+
+#tulip {
+  
+    background: url(http://i.imgur.com/GCIcTaD.png) no-repeat;
+    background-position: 50% 30%;
+    background-size:200% 
+        
+}
+
+#rose {
+   
+    background: url(http://i.imgur.com/nOMhtbM.png) no-repeat;
+    background-position: 48% 8%;
+    background-size:315%;
+        
+}
+
+#dandelion {
+  
+    background: url(http://i.imgur.com/QJVCyGE.png) no-repeat;
+    background-position: 62% 7%;
+    background-size:190%;
+        
+}
+
+.table.percentage > thead > tr > th,
+.table.percentage > tbody > tr > th{
+    border: none;
+}
+
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.table span.flower {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* List style */
+#list > li {
+    margin: 20px 0px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-left: 3px solid rgb(244, 137, 137);'
+}
+
+.ct-chart.history-chart-container .ct-series.ct-series-a .ct-bar{
+    stroke: #F05B4F;
+    opacity: 0.4;
+}
+
+.ct-chart.history-chart-container .ct-series.ct-series-a .ct-bar.highlight{
+    stroke: #d70206;
+    opacity: 1;
+}
+
+.flower-name-container {
+    height: 100px;
+    margin: 30px -10px 0px 0px;
+}
+
+.flower-name-container span {
+    vertical-align: middle;
+}
+
+.flower-name-container .flower-name {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+
+.day-view-container {
+    padding-top: 22px;
+}
+
+.big-number {
+    font-size: 20px;
+    line-height: 92px;
+}
+
+.list-of-data > div {
+    font-size: 16px;
+    margin: 7px 0px;
+}
+
+.footer {
+    margin: 45px -7px 20px 33px;
+    border-top: 1px solid #ddd;
+    text-align: center
+}
+
+.footer span {
+    font-size: 30px;
+    color: rgb(244, 137, 137);
+    margin-right: 8px;
+}
+
+
