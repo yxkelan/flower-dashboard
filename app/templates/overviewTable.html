@@ -1,0 +1,22 @@
+<h3 class="date"><%= date %></h3>
+<table class="table percentage">
+    <tr>
+        <th>Type</th>
+        <th>Total</th>
+        <th>Sold</th>
+        <th>Unsold</th>
+    </tr>
+    <% items.forEach(function(item){ %>
+        <tr>  
+            <% var str = item.flower; item.flowerUpper = str.toUpperCase(); %>
+            <td><span class="flower" id="<%= item.flower %>"></span>
+                <span><%= item.flowerUpper %></span>
+            </td>
+            <td><%= item['total%'] %></td>
+            <td><%= item['sold%'] %></td>
+            <td><%= item['unsold%'] %></td>
+        </tr>
+    <% }) %>
+</table>
+
+
